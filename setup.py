@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 PACKAGE_NAME = 'gaia_cmd_plotter'
-PACKAGE_VERSION = '0.1.1'
+PACKAGE_VERSION = '0.1.3'
 AUTHOR_NAME = 'Yue Zhao'
 AUTHOR_EMAIL = 'Yue.Zhao@soton.ac.uk'
 
@@ -14,7 +14,7 @@ setup(
         'matplotlib>=3.3.0',
     ],
     package_data={
-        'gaia_cmd_plotter': ['gaia_cmd.mplstyle', 'data/gaia_cmd_background.png'],
+        'gaia_cmd_plotter': ['data/gaia_cmd.mplstyle', 'data/gaia_cmd_background.png'],
     },
     author=AUTHOR_NAME,
     author_email=AUTHOR_EMAIL,
