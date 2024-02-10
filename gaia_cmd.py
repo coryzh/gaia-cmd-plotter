@@ -3,7 +3,7 @@ import config
 
 
 class GaiaCMDAxis(plt.Axes):
-    background_image = plt.imread(config.DATA_DIR_MISC / "gaia_cmd_background.png")
+    background_image = plt.imread(config.DATA_DIR / "gaia_cmd_background.png")
     left, right = -1.5, 5.4
     bottom, top = 19.0, -5.0
     extent = (left, right, bottom, top)
@@ -34,7 +34,7 @@ def main() -> None:
     ax = GaiaCMDAxis(fig)
     fig.add_axes(ax)
     ax.plot(2.3, 5.5, mfc="r", mec="k", marker="o", ms=7)
-    plt.savefig(config.RESULTS_FIGURES_DIR / "test_cmd.pdf")
+    plt.savefig(config.TEST_DIR / "test_cmd.pdf")
 
 
 if __name__ == "__main__":
