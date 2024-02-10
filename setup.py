@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 PACKAGE_NAME = 'gaia_cmd_plotter'
-PACKAGE_VERSION = '0.1'
+PACKAGE_VERSION = '0.1.1'
 AUTHOR_NAME = 'Yue Zhao'
 AUTHOR_EMAIL = 'Yue.Zhao@soton.ac.uk'
 

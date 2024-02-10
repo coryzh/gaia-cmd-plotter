@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
-from gaia_cmd_plotter import config
+from gaia_cmd_plotter import _config
 
 
 class GaiaCMDAxis(plt.Axes):
     """
     A matplotlib.pyplot.Axes object that displays a Gaia CMD background.
     """
-    background_image = plt.imread(config.DATA_DIR / "gaia_cmd_background.png")
+    background_image = plt.imread(_config.DATA_DIR / "gaia_cmd_background.png")
     left, right = -1.5, 5.4
     bottom, top = 19.0, -5.0
     extent = (left, right, bottom, top)
@@ -18,7 +18,7 @@ class GaiaCMDAxis(plt.Axes):
             rect = [0.125, 0.110, 0.775, 0.770]
 
         # Set matplotlib style
-        plt.style.use("./gaia_cmd_plotter/gaia_cmd.mplstyle")
+        plt.style.use(_config.DATA_DIR / "gaia_cmd.mplstyle")
 
         # Call the parent class constructor
         super().__init__(fig, rect, **kwargs)
@@ -36,7 +36,7 @@ def main() -> None:
     ax = GaiaCMDAxis(fig)
     fig.add_axes(ax)
     ax.plot(2.3, 5.5, mfc="r", mec="k", marker="o", ms=7)
-    plt.savefig(config.TEST_DIR / "test_cmd.pdf")
+    plt.savefig(_config.TEST_DIR / "test_cmd.pdf")
 
 
 if __name__ == "__main__":
