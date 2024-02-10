@@ -33,7 +33,7 @@ def main() -> None:
     fig = plt.figure(figsize=(8, 8))
     ax = GaiaCMDAxis(fig)
     fig.add_axes(ax)
-    ax.plot(2.1, 5.5, mfc="r", mec="k", marker="o", ms=7)
+    ax.plot(2.3, 5.5, mfc="r", mec="k", marker="o", ms=7)
     plt.savefig(config.TEST_DIR / "test_cmd.pdf")
 
 
