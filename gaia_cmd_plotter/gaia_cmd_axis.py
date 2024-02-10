@@ -1,8 +1,11 @@
 import matplotlib.pyplot as plt
-import config
+from gaia_cmd_plotter import config
 
 
 class GaiaCMDAxis(plt.Axes):
+    """
+    A matplotlib.pyplot.Axes object that displays a Gaia CMD background.
+    """
     background_image = plt.imread(config.DATA_DIR / "gaia_cmd_background.png")
     left, right = -1.5, 5.4
     bottom, top = 19.0, -5.0
