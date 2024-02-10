@@ -15,7 +15,7 @@ class GaiaCMDAxis(plt.Axes):
             rect = [0.125, 0.110, 0.775, 0.770]
 
         # Set matplotlib style
-        plt.style.use("./gaia_cmd.mplstyle")
+        plt.style.use("./gaia_cmd_plotter/gaia_cmd.mplstyle")
 
         # Call the parent class constructor
         super().__init__(fig, rect, **kwargs)
@@ -29,7 +29,6 @@ class GaiaCMDAxis(plt.Axes):
 
 
 def main() -> None:
-    # plt.style.use("mycustomised")
     fig = plt.figure(figsize=(8, 8))
     ax = GaiaCMDAxis(fig)
     fig.add_axes(ax)
