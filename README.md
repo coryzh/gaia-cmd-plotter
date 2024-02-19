@@ -26,7 +26,7 @@ ax = GaiaCMDAxis(fig)
 ```
 
 You can then use the `GaiaCMDAxis` object like any other Matplotlib axis. For example, you can plot data on top of 
-the Gaia CMD background, for example, 
+the Gaia CMD background, 
 ```python
 bp_rp = 3.5
 g_abs = 5.0
