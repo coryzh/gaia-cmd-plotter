@@ -6,11 +6,11 @@ class GaiaCMDAxis(plt.Axes):
     """
     A matplotlib.pyplot.Axes object that displays a Gaia CMD background.
     """
-    background_image = plt.imread(_config.DATA_DIR / "gaia_cmd_background.png")
-    left, right = -1.5, 5.4
-    bottom, top = 19.0, -5.0
-    extent = (left, right, bottom, top)
-    aspec_ratio = (right - left) / abs(top - bottom)
+    _background_image = plt.imread(_config.DATA_DIR / "gaia_cmd_background.png")
+    _left, _right = -1.5, 5.4
+    _bottom, _top = 19.0, -5.0
+    _extent = (_left, _right, _bottom, _top)
+    _aspec_ratio = (_right - _left) / abs(_top - _bottom)
 
     def __init__(self, fig, rect=None, **kwargs):
         # Set default rect
@@ -24,7 +24,7 @@ class GaiaCMDAxis(plt.Axes):
         super().__init__(fig, rect, **kwargs)
 
         # Set background image
-        self.imshow(self.background_image, extent=self.extent, aspect=self.aspec_ratio)
+        self.imshow(self._background_image, extent=self._extent, aspect=self._aspec_ratio)
 
         # Set axis labels
         self.set_xlabel(r"$\mathrm{G_{BP} - G_{RP}}$")
@@ -36,7 +36,7 @@ class GaiaCMDAxis(plt.Axes):
 def main() -> None:
     fig = plt.figure(figsize=(8, 8))
     ax = GaiaCMDAxis(fig)
-    fig.add_axes(ax)
+    # fig.add_axes(ax)
     ax.plot(2.3, 5.5, mfc="r", mec="k", marker="o", ms=7)
     plt.savefig(_config.TEST_DIR / "test_cmd.pdf")
 
