@@ -32,3 +32,15 @@ bp_rp = 3.5
 g_abs = 5.0
 ax.plot(bp_rp, g_abs, "ko", ms=10, mec="k")
 ```
+
+## Acknowledgements
+This package has made use of data from the European Space Agency (ESA) [Gaia mission](https://www.cosmos.esa.int/gaia), 
+processed by the [Gaia Data Processing and Analysis Consortium](https://www.cosmos.esa.int/web/gaia/dpac/consortium). 
+The CMD background data was obtained from the Gaia data release 3 (DR3; Gaia Collaboration et al. 2016, 2023). The bulk 
+of points in the CMD background are retrieved from the Gaia DR3 catalog, using the query in Gaia Collaboration 2018.
+
+
+## References
+[1] [Gaia Collaboration, 2016, A&A, 595, A1](https://ui.adsabs.harvard.edu/abs/2016A%26A...595A...1G/abstract)
+[2] [Gaia Collaboration, 2018, A&A, 616, A10](https://ui.adsabs.harvard.edu/abs/2018A%26A...616A...1G/abstract)
+[3] [Gaia Collaboration, 2023, A&A, 674, A38](https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract)
