@@ -7,6 +7,6 @@ Diagram (CMD) background. This package is useful for visualising astronomical da
 
 You can install gaia_cmd_plotter using `pip`:
 
-```bash
+```
 pip install gaia-cmd-plotter
 ```
