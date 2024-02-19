@@ -1,0 +1,11 @@
+# gaia
+
+GaiaCMDAxis is a Python package for creating customized Matplotlib axes that display a Gaia Color-Magnitude Diagram (CMD) background. This package is useful for visualizing astronomical data within the context of a Gaia CMD.
+
+## Installation
+
+You can install GaiaCMDAxis using pip:
+
+```bash
+pip install gaia-cmd-axis
+```
