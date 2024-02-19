@@ -30,6 +30,8 @@ class GaiaCMDAxis(plt.Axes):
         self.set_xlabel(r"$\mathrm{G_{BP} - G_{RP}}$")
         self.set_ylabel(r"$\mathrm{M_G}$")
 
+        fig.add_axes(self)
+
 
 def main() -> None:
     fig = plt.figure(figsize=(8, 8))
