@@ -5,6 +5,7 @@ from gaia_cmd_plotter import _config
 class GaiaCMDAxis(plt.Axes):
     """
     A matplotlib.pyplot.Axes object that displays a Gaia CMD background.
+    Inherits from matplotlib.pyplot.Axes.
     """
     _background_image = plt.imread(_config.DATA_DIR / "gaia_cmd_background.png")
     _left, _right = -1.5, 5.4
@@ -13,6 +14,15 @@ class GaiaCMDAxis(plt.Axes):
     _aspec_ratio = (_right - _left) / abs(_top - _bottom)
 
     def __init__(self, fig, rect=None, **kwargs):
+        """
+        Constructor for GaiaCMDAxis.
+
+        Parameters
+        ----------
+        fig : matplotlib.figure.Figure
+        rect : list, optional
+        kwargs : dict, optional
+        """
         # Set default rect
         if rect is None:
             rect = [0.125, 0.110, 0.775, 0.770]
