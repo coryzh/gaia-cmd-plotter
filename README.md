@@ -1,6 +1,6 @@
 # gaia-cmd-plotter
 
-gaia_cmd_plotter is a Python package for creating customized Matplotlib axes that display a Gaia Color-Magnitude
+`gaia_cmd_plotter` is a Python package for creating customized Matplotlib axes that display a Gaia Color-Magnitude
 Diagram (CMD) background. This package is useful for visualising astronomical data within the context of a Gaia CMD.
 
 ## Installation
