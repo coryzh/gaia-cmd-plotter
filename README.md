@@ -41,6 +41,6 @@ of points in the CMD background are retrieved from the Gaia DR3 catalog, using t
 
 
 ## References
-[1] [Gaia Collaboration, 2016, A&A, 595, A1](https://ui.adsabs.harvard.edu/abs/2016A%26A...595A...1G/abstract)
-[2] [Gaia Collaboration, 2018, A&A, 616, A10](https://ui.adsabs.harvard.edu/abs/2018A%26A...616A...1G/abstract)
-[3] [Gaia Collaboration, 2023, A&A, 674, A38](https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract)
+[1]. [Gaia Collaboration, 2016, A&A, 595, A1](https://ui.adsabs.harvard.edu/abs/2016A%26A...595A...1G/abstract)
+[2]. [Gaia Collaboration, 2018, A&A, 616, A10](https://ui.adsabs.harvard.edu/abs/2018A%26A...616A...1G/abstract)
+[3]. [Gaia Collaboration, 2023, A&A, 674, A38](https://ui.adsabs.harvard.edu/abs/2023A%26A...674A...1G/abstract)
